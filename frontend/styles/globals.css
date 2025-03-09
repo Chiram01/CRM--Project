@@ -1,0 +1,205 @@
+/* General body styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    background: #ADE1EF;
+    color: #023047;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    text-align: center;
+}
+
+/* Heading styles */
+h2 {
+    font-size: 2.5rem;
+    color: #023047;
+}
+
+h3, h4, h5, h6 {
+    font-size: 2rem;
+    color: #023047;
+}
+
+/* Link styles */
+a {
+    font-size: 1.2rem;
+    color: #023047;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease, text-shadow 0.3s ease;
+}
+
+a:hover {
+    color: #ff6600;
+    text-shadow: 0 0 10px #ffcc00;
+}
+
+/* Button styles */
+button {
+    background: #6A89A7;
+    color: white;
+    border: none;
+    padding: 10px 20px; /* Increased padding for better visibility */
+    cursor: pointer;
+    border-radius: 50px;
+    font-size: 1.2rem; /* Increased font size */
+    font-weight: bold;
+    text-transform: uppercase;
+    box-shadow: 0 4px 15px rgba(150, 185, 208, 0.5);
+    transition: all 0.4s ease;
+    margin-top: 20px;
+}
+
+button:hover {
+    transform: scale(1.1);
+    box-shadow: 0 6px 20px rgba(150, 185, 208, 0.7);
+}
+
+/* Container styles */
+.container {
+    max-width: 90%;
+    padding: 20px;
+}
+
+/* Card styles */
+.card {
+    background: rgba(255, 255, 255, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 20px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+    margin-bottom: 20px;
+    transition: transform 0.4s ease, box-shadow 0.4s ease;
+    text-align: center;
+    color: #023047;
+}
+
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+}
+
+/* Navbar styles */
+.navbar {
+    background: rgba(0, 0, 0, 0.8);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1000;
+}
+
+.navbar a {
+    color: white;
+    margin: 0 20px;
+    font-size: 1.5rem;
+    font-weight: bold;
+    transition: transform 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    transform: scale(1.1);
+    color: #ffcc00;
+}
+
+/* Footer styles */
+.footer {
+    background: rgba(0, 0, 0, 0.8);
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+/* Keyframes for floating animation */
+@keyframes floating {
+    0% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+    100% { transform: translateY(0); }
+}
+
+/* Animated text styles */
+.animated-text {
+    font-size: 2rem;
+    font-weight: bold;
+    color: #023047;
+    text-shadow: 0 0 10px #ff6600;
+    animation: floating 3s infinite;
+}
+
+/* Table styles */
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+
+th, td {
+    border: 2px solid #384959; /* Thicker border for better clarity */
+    padding: 8px;
+    text-align: left;
+}
+
+/* Responsive styles for screens smaller than 768px */
+@media screen and (max-width: 768px) {
+    h1 {
+        font-size: 2.5rem;
+        color: #023047;
+    }
+    h2 {
+        font-size: 2rem;
+    }
+    h3, h4, h5, h6 {
+        font-size: 1.8rem;
+    }
+    .container {
+        max-width: 100%;
+        padding: 15px;
+    }
+    .card {
+        padding: 20px;
+    }
+    .navbar a {
+        font-size: 1.2rem;
+    }
+    button {
+        font-size: 1.2rem;
+        padding: 12px 15px;
+    }
+}
+
+/* Responsive styles for screens smaller than 480px */
+@media screen and (max-width: 480px) {
+    h1 {
+        font-size: 2rem;
+        color: #023047;
+    }
+    h2 {
+        font-size: 1.8rem;
+    }
+    h3, h4, h5, h6 {
+        font-size: 1.5rem;
+    }
+    .container {
+        max-width: 100%;
+        padding: 10px;
+    }
+    .card {
+        padding: 15px;
+    }
+    .navbar a {
+        font-size: 1rem;
+    }
+    button {
+        font-size: 1rem;
+        padding: 10px 20px;
+    }
+}
