@@ -25,42 +25,41 @@ CRM_PROJECT/
         ├──app.js       
 
 
-### File Descriptions:
+ File Descriptions:
 
-### **Backend**
-#### `backend/index.js`  
+Backend
+1) `backend/index.js`  
 - The main entry point for the backend server basically contains everything both customer and reminder.  
 
 
-### **Frontend Components**
-#### `frontend/components/ReminderHandler.js`  
+Frontend Components
+1) `frontend/components/ReminderHandler.js`  
 - Handles fetching reminders and checking for due ones in the frontend.  
 - Likely works with notifications to inform users when a reminder is due and logs.  
 
 ---
 
-### **Frontend Pages**
-#### `frontend/pages/_app.js`  
+2)  `frontend/pages/_app.js`  
 - The global wrapper for the Next.js app.  
 - Manages layout, global styles, and state across all pages.  
 
-#### `frontend/pages/customer.js`  
+3)  `frontend/pages/customer.js`  
 - Displays customer details and interactions.  
 - Likely allows adding, updating, and tracking customer interactions.  
 
-#### `frontend/pages/index.js`  
+4)  `frontend/pages/index.js`  
 - The main dashboard of the CRM system.  
 - Displays an overview of customers, reminders, and notifications(which isnt working).  
 
-#### `frontend/pages/reminder.js`  
+5)  `frontend/pages/reminder.js`  
 - The dedicated page for managing reminders.  
 - Allows adding new reminders, listing existing ones, and deleting them.  
 
-#### `frontend/utils/api.js`  
+6)  `frontend/utils/api.js`  
 - Handles API calls to the backend.  
 - Likely contains functions for fetching reminders, adding customers, etc.  
 
-#### `frontend/utils/app.js`  
+7)  `frontend/utils/app.js`  
 - General utility functions for the frontend.  
 - Might include helper functions for formatting dates, notifications, etc.  
 
